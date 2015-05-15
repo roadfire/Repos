@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		03D571FE1B067BC8003D0545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D571FD1B067BC8003D0545 /* AppDelegate.swift */; };
-		03D572001B067BC8003D0545 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D571FF1B067BC8003D0545 /* ViewController.swift */; };
+		03D572001B067BC8003D0545 /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D571FF1B067BC8003D0545 /* ReposViewController.swift */; };
 		03D572031B067BC8003D0545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D572011B067BC8003D0545 /* Main.storyboard */; };
 		03D572051B067BC8003D0545 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D572041B067BC8003D0545 /* Images.xcassets */; };
 		03D572081B067BC8003D0545 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D572061B067BC8003D0545 /* LaunchScreen.xib */; };
 		03D572141B067BC9003D0545 /* ReposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D572131B067BC9003D0545 /* ReposTests.swift */; };
+		03D5721E1B068223003D0545 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5721D1B068223003D0545 /* RepoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		03D571F81B067BC8003D0545 /* Repos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D571FC1B067BC8003D0545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D571FD1B067BC8003D0545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03D571FF1B067BC8003D0545 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03D571FF1B067BC8003D0545 /* ReposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewController.swift; sourceTree = "<group>"; };
 		03D572021B067BC8003D0545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03D572041B067BC8003D0545 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		03D572071B067BC8003D0545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		03D5720D1B067BC9003D0545 /* ReposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReposTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D572121B067BC9003D0545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D572131B067BC9003D0545 /* ReposTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposTests.swift; sourceTree = "<group>"; };
+		03D5721D1B068223003D0545 /* RepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				03D571FD1B067BC8003D0545 /* AppDelegate.swift */,
-				03D571FF1B067BC8003D0545 /* ViewController.swift */,
+				03D571FF1B067BC8003D0545 /* ReposViewController.swift */,
+				03D5721D1B068223003D0545 /* RepoCell.swift */,
 				03D572011B067BC8003D0545 /* Main.storyboard */,
 				03D572041B067BC8003D0545 /* Images.xcassets */,
 				03D572061B067BC8003D0545 /* LaunchScreen.xib */,
@@ -212,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03D572001B067BC8003D0545 /* ViewController.swift in Sources */,
+				03D572001B067BC8003D0545 /* ReposViewController.swift in Sources */,
 				03D571FE1B067BC8003D0545 /* AppDelegate.swift in Sources */,
+				03D5721E1B068223003D0545 /* RepoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
