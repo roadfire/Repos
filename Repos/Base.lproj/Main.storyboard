@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3j4-a9-ddH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3j4-a9-ddH">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--ResearchKit Repos-->
+        <!--New Swift Repos on GitHub-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ReposViewController" customModule="Repos" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,14 +25,20 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eul-9F-ysV" id="fG0-2I-0gL">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="AppCore" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw4-GJ-uYI">
-                                                    <rect key="frame" x="16" y="8" width="568" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="998" text="AppCore" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw4-GJ-uYI">
+                                                    <rect key="frame" x="16" y="8" width="489" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Core code shared by the initial ResearchKit apps." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jP-xs-mqj">
-                                                    <rect key="frame" x="16" y="37" width="568" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" verticalCompressionResistancePriority="1000" text="Core code shared by the initial ResearchKit apps." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jP-xs-mqj">
+                                                    <rect key="frame" x="16" y="36" width="489" height="22.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="130 stars" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnC-08-jek">
+                                                    <rect key="frame" x="513" y="23" width="71" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -41,15 +47,27 @@
                                             <constraints>
                                                 <constraint firstItem="zw4-GJ-uYI" firstAttribute="leading" secondItem="fG0-2I-0gL" secondAttribute="leading" constant="16" id="2HR-5t-8Ap"/>
                                                 <constraint firstAttribute="trailing" secondItem="9jP-xs-mqj" secondAttribute="trailing" constant="16" id="6jx-I7-J8N"/>
+                                                <constraint firstItem="WnC-08-jek" firstAttribute="leading" secondItem="zw4-GJ-uYI" secondAttribute="trailing" constant="8" id="BQy-3q-HWY"/>
                                                 <constraint firstItem="9jP-xs-mqj" firstAttribute="top" secondItem="zw4-GJ-uYI" secondAttribute="bottom" constant="8" id="FCo-jn-dhu"/>
+                                                <constraint firstAttribute="trailing" secondItem="WnC-08-jek" secondAttribute="trailing" constant="16" id="LzY-Zk-e1s"/>
                                                 <constraint firstItem="9jP-xs-mqj" firstAttribute="leading" secondItem="fG0-2I-0gL" secondAttribute="leading" constant="16" id="VU5-sb-5vF"/>
                                                 <constraint firstItem="zw4-GJ-uYI" firstAttribute="top" secondItem="fG0-2I-0gL" secondAttribute="top" constant="8" id="aHp-TE-xQP"/>
                                                 <constraint firstAttribute="trailing" secondItem="zw4-GJ-uYI" secondAttribute="trailing" constant="16" id="adT-qX-fYg"/>
+                                                <constraint firstItem="WnC-08-jek" firstAttribute="leading" secondItem="9jP-xs-mqj" secondAttribute="trailing" constant="8" id="hPq-Kw-RRK"/>
                                                 <constraint firstAttribute="bottom" secondItem="9jP-xs-mqj" secondAttribute="bottom" constant="8" id="iuc-pR-1cH"/>
+                                                <constraint firstAttribute="centerY" secondItem="WnC-08-jek" secondAttribute="centerY" id="kLf-Ge-pd0"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="adT-qX-fYg"/>
+                                                    <exclude reference="6jx-I7-J8N"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="descriptionBottomConstraint" destination="iuc-pR-1cH" id="99f-60-5Pj"/>
                                             <outlet property="descriptionLabel" destination="9jP-xs-mqj" id="T46-aX-qzu"/>
+                                            <outlet property="starsLabel" destination="WnC-08-jek" id="t7J-Za-C5C"/>
                                             <outlet property="titleLabel" destination="zw4-GJ-uYI" id="GGU-DZ-n35"/>
                                         </connections>
                                     </tableViewCell>
@@ -68,7 +86,7 @@
                             <constraint firstAttribute="trailing" secondItem="NTL-ed-Cyh" secondAttribute="trailing" id="xWj-sc-D8B"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="ResearchKit Repos" id="umS-5l-0Al"/>
+                    <navigationItem key="navigationItem" title="New Swift Repos on GitHub" id="umS-5l-0Al"/>
                     <connections>
                         <outlet property="tableView" destination="NTL-ed-Cyh" id="pr2-pY-Cvg"/>
                     </connections>

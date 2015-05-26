@@ -11,6 +11,8 @@ import UIKit
 class RepoCell: UITableViewCell {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var starsLabel: UILabel!
+    @IBOutlet var descriptionBottomConstraint: NSLayoutConstraint!
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -18,5 +20,6 @@ class RepoCell: UITableViewCell {
         
         titleLabel.preferredMaxLayoutWidth = titleLabel.bounds.width
         descriptionLabel.preferredMaxLayoutWidth = descriptionLabel.bounds.width
+        starsLabel.preferredMaxLayoutWidth = starsLabel.bounds.width
     }
 }

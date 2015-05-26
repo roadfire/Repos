@@ -19,7 +19,12 @@ class ReposViewController: UIViewController, UITableViewDataSource, UITableViewD
         tableView.rowHeight = UITableViewAutomaticDimension
 
         let session = NSURLSession.sharedSession()
-        let url = NSURL(string: "https://api.github.com/orgs/researchkit/repos")!
+        
+        let date = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.CalendarUnitDay, value: -30, toDate: NSDate(), options: nil)
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "YYYY-MM-dd"
+        let urlString = "https://api.github.com/search/repositories?q=created:\">\(formatter.stringFromDate(date!))\"+language:swift+stars:\">=10\"&sort=stars&order=desc".stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+        let url = NSURL(string: urlString)!
         let task = session.dataTaskWithURL(url, completionHandler: { [unowned self] (data, response, error) -> Void in
             if let error = error
             {
@@ -28,9 +33,10 @@ class ReposViewController: UIViewController, UITableViewDataSource, UITableViewD
             }
             
             var jsonError: NSError?
-            if let jsonArray = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: &jsonError) as? [[String: AnyObject]]
+            if let json = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: &jsonError) as? [String: AnyObject],
+            let repositories = json["items"] as? [[String: AnyObject]]
             {
-                self.repos = jsonArray
+                self.repos = repositories
                 dispatch_async(dispatch_get_main_queue()) {
                     self.tableView.reloadData()
                 }
@@ -51,21 +57,37 @@ class ReposViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! RepoCell
-        
-        cell.titleLabel.text = repos[indexPath.row]["name"] as? String
-        cell.descriptionLabel.text = repos[indexPath.row]["description"] as? String
-        
+        configureCell(cell, forRowAtIndexPath: indexPath)
         return cell
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! RepoCell
-        cell.titleLabel.text = repos[indexPath.row]["name"] as? String
-        cell.descriptionLabel.text = repos[indexPath.row]["description"] as? String
+        configureCell(cell, forRowAtIndexPath: indexPath)
         cell.bounds = CGRectMake(0.0, 0.0, CGRectGetWidth(self.tableView.bounds), CGRectGetHeight(cell.bounds));
         cell.layoutIfNeeded()
         let height = cell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize).height + 1
         return height
+    }
+    
+    func configureCell(cell: RepoCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        let repo = repos[indexPath.row]
+        cell.titleLabel.text = repo["name"] as? String
+        cell.descriptionLabel.text = repo["description"] as? String
+        
+        if let stars = repo["stargazers_count"] as? Int {
+            cell.starsLabel.text = "\(stars) stars"
+        }
+        else {
+            cell.starsLabel.text = ""
+        }
+        
+        if count(cell.descriptionLabel.text!) > 0 {
+            cell.descriptionBottomConstraint.constant = 8
+        }
+        else {
+            cell.descriptionBottomConstraint.constant = 0
+        }
     }
 }
 
