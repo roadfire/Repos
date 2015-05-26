@@ -413,6 +413,7 @@
 				03D572191B067BC9003D0545 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03D5721A1B067BC9003D0545 /* Build configuration list for PBXNativeTarget "ReposTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +422,7 @@
 				03D5721C1B067BC9003D0545 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

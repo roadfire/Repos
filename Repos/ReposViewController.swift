@@ -17,6 +17,7 @@ class ReposViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.viewDidLoad()
         
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 100.0
 
         let session = NSURLSession.sharedSession()
         
@@ -61,6 +62,7 @@ class ReposViewController: UIViewController, UITableViewDataSource, UITableViewD
         return cell
     }
     
+    /*
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! RepoCell
         configureCell(cell, forRowAtIndexPath: indexPath)
@@ -69,6 +71,7 @@ class ReposViewController: UIViewController, UITableViewDataSource, UITableViewD
         let height = cell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize).height + 1
         return height
     }
+    */
     
     func configureCell(cell: RepoCell, forRowAtIndexPath indexPath: NSIndexPath) {
         let repo = repos[indexPath.row]
@@ -76,7 +79,7 @@ class ReposViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.descriptionLabel.text = repo["description"] as? String
         
         if let stars = repo["stargazers_count"] as? Int {
-            cell.starsLabel.text = "\(stars) stars"
+            cell.starsLabel.text = "★ \(stars)"
         }
         else {
             cell.starsLabel.text = ""
