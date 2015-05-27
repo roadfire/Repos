@@ -23,29 +23,11 @@ struct ReposViewModel {
         }
     }
 
-    func fetchRepos(completion: (repos: [Repository]?) -> ()) {
-        let session = NSURLSession.sharedSession()
-        let date = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.CalendarUnitDay, value: -30, toDate: NSDate(), options: nil)
-        let formatter = NSDateFormatter()
-        formatter.dateFormat = "YYYY-MM-dd"
-        let urlString = "https://api.github.com/search/repositories?q=created:\">\(formatter.stringFromDate(date!))\"+language:swift+stars:\">=10\"&sort=stars&order=desc".stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
-        let url = NSURL(string: urlString)!
-        let task = session.dataTaskWithURL(url) { (data, response, error) -> Void in
-            if let error = error
-            {
-                println(error.localizedDescription)
-                return
-            }
-            
-            var jsonError: NSError?
-            if let json = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: &jsonError) as? [String: AnyObject],
-                let repositoriesJSON = json["items"] as? [[String: AnyObject]]
-            {
-                completion(repos: parseRepositories(repositoriesJSON))
-            }
+    func fetchRepos(completion: ([Repository]?) -> ()) {
+        let client = GitHubClient()
+        client.getPopularRepositories { popularRepositories in
+            completion(parseRepositories(popularRepositories))
         }
-        
-        task.resume()
     }
     
     func numberOfItems() -> Int {

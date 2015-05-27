@@ -21,6 +21,11 @@
 		03D572051B067BC8003D0545 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D572041B067BC8003D0545 /* Images.xcassets */; };
 		03D572081B067BC8003D0545 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D572061B067BC8003D0545 /* LaunchScreen.xib */; };
 		03D5721E1B068223003D0545 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5721D1B068223003D0545 /* RepoCell.swift */; };
+		03E213D41B1620FD005FB345 /* GitHubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D31B1620FD005FB345 /* GitHubClient.swift */; };
+		03E213D51B1622B7005FB345 /* GitHubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D31B1620FD005FB345 /* GitHubClient.swift */; };
+		03E213D71B162359005FB345 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D61B162359005FB345 /* DateFormatter.swift */; };
+		03E213D81B162359005FB345 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D61B162359005FB345 /* DateFormatter.swift */; };
+		03E213DA1B1623D6005FB345 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D91B1623D6005FB345 /* DateFormatterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,9 @@
 		03D5720D1B067BC9003D0545 /* ReposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReposTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D572121B067BC9003D0545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D5721D1B068223003D0545 /* RepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		03E213D31B1620FD005FB345 /* GitHubClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubClient.swift; sourceTree = "<group>"; };
+		03E213D61B162359005FB345 /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		03E213D91B1623D6005FB345 /* DateFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,8 @@
 				03D5721D1B068223003D0545 /* RepoCell.swift */,
 				03BA68E81B15FFD600D4B262 /* Repository.swift */,
 				03BA68EA1B16014C00D4B262 /* RepositoryParser.swift */,
+				03E213D31B1620FD005FB345 /* GitHubClient.swift */,
+				03E213D61B162359005FB345 /* DateFormatter.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -87,6 +97,7 @@
 			children = (
 				036B6A201B15123100096A0D /* ReposViewModelTests.swift */,
 				03BA68F11B1601FD00D4B262 /* RepositoryParserTests.swift */,
+				03E213D91B1623D6005FB345 /* DateFormatterTests.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -246,9 +257,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E213D71B162359005FB345 /* DateFormatter.swift in Sources */,
 				036B6A231B15125400096A0D /* ReposViewModel.swift in Sources */,
 				03D572001B067BC8003D0545 /* ReposViewController.swift in Sources */,
 				03BA68E91B15FFD600D4B262 /* Repository.swift in Sources */,
+				03E213D41B1620FD005FB345 /* GitHubClient.swift in Sources */,
 				03D571FE1B067BC8003D0545 /* AppDelegate.swift in Sources */,
 				03BA68EB1B16014C00D4B262 /* RepositoryParser.swift in Sources */,
 				03D5721E1B068223003D0545 /* RepoCell.swift in Sources */,
@@ -259,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E213DA1B1623D6005FB345 /* DateFormatterTests.swift in Sources */,
 				03BA68E71B15FE2800D4B262 /* ReposViewModel.swift in Sources */,
 				03BA68F21B1601FD00D4B262 /* RepositoryParserTests.swift in Sources */,
 				03BA68F41B16028500D4B262 /* Repository.swift in Sources */,
+				03E213D81B162359005FB345 /* DateFormatter.swift in Sources */,
+				03E213D51B1622B7005FB345 /* GitHubClient.swift in Sources */,
 				03BA68F31B16023900D4B262 /* RepositoryParser.swift in Sources */,
 				036B6A211B15123100096A0D /* ReposViewModelTests.swift in Sources */,
 			);
