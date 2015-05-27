@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		036B6A211B15123100096A0D /* ReposViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B6A201B15123100096A0D /* ReposViewModelTests.swift */; };
+		036B6A231B15125400096A0D /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B6A221B15125400096A0D /* ReposViewModel.swift */; };
+		03BA68E71B15FE2800D4B262 /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B6A221B15125400096A0D /* ReposViewModel.swift */; };
+		03BA68E91B15FFD600D4B262 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68E81B15FFD600D4B262 /* Repository.swift */; };
+		03BA68EB1B16014C00D4B262 /* RepositoryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68EA1B16014C00D4B262 /* RepositoryParser.swift */; };
+		03BA68F21B1601FD00D4B262 /* RepositoryParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68F11B1601FD00D4B262 /* RepositoryParserTests.swift */; };
+		03BA68F31B16023900D4B262 /* RepositoryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68EA1B16014C00D4B262 /* RepositoryParser.swift */; };
+		03BA68F41B16028500D4B262 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68E81B15FFD600D4B262 /* Repository.swift */; };
 		03D571FE1B067BC8003D0545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D571FD1B067BC8003D0545 /* AppDelegate.swift */; };
 		03D572001B067BC8003D0545 /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D571FF1B067BC8003D0545 /* ReposViewController.swift */; };
 		03D572031B067BC8003D0545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D572011B067BC8003D0545 /* Main.storyboard */; };
 		03D572051B067BC8003D0545 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D572041B067BC8003D0545 /* Images.xcassets */; };
 		03D572081B067BC8003D0545 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D572061B067BC8003D0545 /* LaunchScreen.xib */; };
-		03D572141B067BC9003D0545 /* ReposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D572131B067BC9003D0545 /* ReposTests.swift */; };
 		03D5721E1B068223003D0545 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5721D1B068223003D0545 /* RepoCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036B6A201B15123100096A0D /* ReposViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposViewModelTests.swift; sourceTree = "<group>"; };
+		036B6A221B15125400096A0D /* ReposViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
+		03BA68E81B15FFD600D4B262 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		03BA68EA1B16014C00D4B262 /* RepositoryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryParser.swift; sourceTree = "<group>"; };
+		03BA68F11B1601FD00D4B262 /* RepositoryParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryParserTests.swift; sourceTree = "<group>"; };
 		03D571F81B067BC8003D0545 /* Repos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D571FC1B067BC8003D0545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D571FD1B067BC8003D0545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +48,6 @@
 		03D572071B067BC8003D0545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		03D5720D1B067BC9003D0545 /* ReposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReposTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D572121B067BC9003D0545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03D572131B067BC9003D0545 /* ReposTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposTests.swift; sourceTree = "<group>"; };
 		03D5721D1B068223003D0545 /* RepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +69,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03BA68EC1B16019600D4B262 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				03D571FD1B067BC8003D0545 /* AppDelegate.swift */,
+				03D571FF1B067BC8003D0545 /* ReposViewController.swift */,
+				036B6A221B15125400096A0D /* ReposViewModel.swift */,
+				03D5721D1B068223003D0545 /* RepoCell.swift */,
+				03BA68E81B15FFD600D4B262 /* Repository.swift */,
+				03BA68EA1B16014C00D4B262 /* RepositoryParser.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		03BA68EE1B1601D300D4B262 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				036B6A201B15123100096A0D /* ReposViewModelTests.swift */,
+				03BA68F11B1601FD00D4B262 /* RepositoryParserTests.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
 		03D571EF1B067BC8003D0545 = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +112,7 @@
 		03D571FA1B067BC8003D0545 /* Repos */ = {
 			isa = PBXGroup;
 			children = (
-				03D571FD1B067BC8003D0545 /* AppDelegate.swift */,
-				03D571FF1B067BC8003D0545 /* ReposViewController.swift */,
-				03D5721D1B068223003D0545 /* RepoCell.swift */,
+				03BA68EC1B16019600D4B262 /* Source */,
 				03D572011B067BC8003D0545 /* Main.storyboard */,
 				03D572041B067BC8003D0545 /* Images.xcassets */,
 				03D572061B067BC8003D0545 /* LaunchScreen.xib */,
@@ -101,7 +132,7 @@
 		03D572101B067BC9003D0545 /* ReposTests */ = {
 			isa = PBXGroup;
 			children = (
-				03D572131B067BC9003D0545 /* ReposTests.swift */,
+				03BA68EE1B1601D300D4B262 /* Source */,
 				03D572111B067BC9003D0545 /* Supporting Files */,
 			);
 			path = ReposTests;
@@ -215,8 +246,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				036B6A231B15125400096A0D /* ReposViewModel.swift in Sources */,
 				03D572001B067BC8003D0545 /* ReposViewController.swift in Sources */,
+				03BA68E91B15FFD600D4B262 /* Repository.swift in Sources */,
 				03D571FE1B067BC8003D0545 /* AppDelegate.swift in Sources */,
+				03BA68EB1B16014C00D4B262 /* RepositoryParser.swift in Sources */,
 				03D5721E1B068223003D0545 /* RepoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,7 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03D572141B067BC9003D0545 /* ReposTests.swift in Sources */,
+				03BA68E71B15FE2800D4B262 /* ReposViewModel.swift in Sources */,
+				03BA68F21B1601FD00D4B262 /* RepositoryParserTests.swift in Sources */,
+				03BA68F41B16028500D4B262 /* Repository.swift in Sources */,
+				03BA68F31B16023900D4B262 /* RepositoryParser.swift in Sources */,
+				036B6A211B15123100096A0D /* ReposViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
