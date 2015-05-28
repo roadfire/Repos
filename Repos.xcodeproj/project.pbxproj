@@ -11,6 +11,7 @@
 		03693A361B16A64800B324A7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03693A331B16A17700B324A7 /* Alamofire.framework */; };
 		036B6A211B15123100096A0D /* ReposViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B6A201B15123100096A0D /* ReposViewModelTests.swift */; };
 		036B6A231B15125400096A0D /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B6A221B15125400096A0D /* ReposViewModel.swift */; };
+		039129781B17A106005B3987 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039129771B17A106005B3987 /* DateFormatterTests.swift */; };
 		03BA68E91B15FFD600D4B262 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68E81B15FFD600D4B262 /* Repository.swift */; };
 		03BA68EB1B16014C00D4B262 /* RepositoryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68EA1B16014C00D4B262 /* RepositoryParser.swift */; };
 		03BA68F21B1601FD00D4B262 /* RepositoryParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68F11B1601FD00D4B262 /* RepositoryParserSpec.swift */; };
@@ -62,6 +63,7 @@
 		03693A331B16A17700B324A7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		036B6A201B15123100096A0D /* ReposViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposViewModelTests.swift; sourceTree = "<group>"; };
 		036B6A221B15125400096A0D /* ReposViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
+		039129771B17A106005B3987 /* DateFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
 		03BA68E81B15FFD600D4B262 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		03BA68EA1B16014C00D4B262 /* RepositoryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryParser.swift; sourceTree = "<group>"; };
 		03BA68F11B1601FD00D4B262 /* RepositoryParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryParserSpec.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				036B6A201B15123100096A0D /* ReposViewModelTests.swift */,
 				03BA68F11B1601FD00D4B262 /* RepositoryParserSpec.swift */,
 				03E213D91B1623D6005FB345 /* DateFormatterSpec.swift */,
+				039129771B17A106005B3987 /* DateFormatterTests.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03E93E4B1B1756FD009E7EA1 /* ReposViewModel.swift in Sources */,
+				039129781B17A106005B3987 /* DateFormatterTests.swift in Sources */,
 				03E93E4D1B1756FD009E7EA1 /* Repository.swift in Sources */,
 				03E93E4E1B1756FD009E7EA1 /* RepositoryParser.swift in Sources */,
 				03E93E4F1B1756FD009E7EA1 /* GitHubClient.swift in Sources */,
