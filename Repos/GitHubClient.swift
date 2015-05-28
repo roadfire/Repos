@@ -17,15 +17,13 @@ struct GitHubClient {
     func getPopularRepositories(completion: [[String: AnyObject]] -> ()) {
         let session = NSURLSession.sharedSession()
         let date = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.CalendarUnitDay, value: -createdDaysAgo, toDate: NSDate(), options: nil)!
-        let formatter = DateFormatter()
-        let urlString = "\(searchURL)?q=created:\">\(formatter.stringFromDate(date))\"+language:swift+stars:\">=\(minimumStars)\"&sort=stars&order=desc".stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
         let params = [
-            "q": "created:\">\(formatter.stringFromDate(date))\" language:swift stars:\">=\(minimumStars)\"",
+            "q": "created:\">\(DateFormatter().stringFromDate(date))\" language:swift stars:\">=\(minimumStars)\"",
             "sort": "stars",
             "order": "desc"
         ]
         
-        Alamofire.request(.GET, urlString, parameters: nil, encoding: .URL).responseJSON(options: .allZeros) { (request, response, jsonObject, error) -> Void in
+        Alamofire.request(.GET, searchURL, parameters: params, encoding: .URL).responseJSON(options: .allZeros) { (request, response, jsonObject, error) -> Void in
             println("request: \(request.URL)")
             println("request params: \(request.URL!.parameterString)")
             println("json: \(jsonObject)")
