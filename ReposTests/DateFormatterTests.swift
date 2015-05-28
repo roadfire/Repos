@@ -20,6 +20,6 @@ class DateFormatterTests: XCTestCase {
         let formatter = DateFormatter()
         let formattedDate = formatter.stringFromDate(date)
         
-        XCTAssertEqual(formattedDate, "2015-05-27", "expected date to be '20150527'")
+        XCTAssertEqual(formattedDate, "2015-05-27", "expected date to be '2015-05-27'")
     }
 }
