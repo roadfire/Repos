@@ -11,12 +11,9 @@
 		03693A361B16A64800B324A7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03693A331B16A17700B324A7 /* Alamofire.framework */; };
 		036B6A211B15123100096A0D /* ReposViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B6A201B15123100096A0D /* ReposViewModelTests.swift */; };
 		036B6A231B15125400096A0D /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B6A221B15125400096A0D /* ReposViewModel.swift */; };
-		03BA68E71B15FE2800D4B262 /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B6A221B15125400096A0D /* ReposViewModel.swift */; };
 		03BA68E91B15FFD600D4B262 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68E81B15FFD600D4B262 /* Repository.swift */; };
 		03BA68EB1B16014C00D4B262 /* RepositoryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68EA1B16014C00D4B262 /* RepositoryParser.swift */; };
 		03BA68F21B1601FD00D4B262 /* RepositoryParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68F11B1601FD00D4B262 /* RepositoryParserTests.swift */; };
-		03BA68F31B16023900D4B262 /* RepositoryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68EA1B16014C00D4B262 /* RepositoryParser.swift */; };
-		03BA68F41B16028500D4B262 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68E81B15FFD600D4B262 /* Repository.swift */; };
 		03D571FE1B067BC8003D0545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D571FD1B067BC8003D0545 /* AppDelegate.swift */; };
 		03D572001B067BC8003D0545 /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D571FF1B067BC8003D0545 /* ReposViewController.swift */; };
 		03D572031B067BC8003D0545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D572011B067BC8003D0545 /* Main.storyboard */; };
@@ -24,10 +21,17 @@
 		03D572081B067BC8003D0545 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D572061B067BC8003D0545 /* LaunchScreen.xib */; };
 		03D5721E1B068223003D0545 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5721D1B068223003D0545 /* RepoCell.swift */; };
 		03E213D41B1620FD005FB345 /* GitHubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D31B1620FD005FB345 /* GitHubClient.swift */; };
-		03E213D51B1622B7005FB345 /* GitHubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D31B1620FD005FB345 /* GitHubClient.swift */; };
 		03E213D71B162359005FB345 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D61B162359005FB345 /* DateFormatter.swift */; };
-		03E213D81B162359005FB345 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D61B162359005FB345 /* DateFormatter.swift */; };
 		03E213DA1B1623D6005FB345 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D91B1623D6005FB345 /* DateFormatterTests.swift */; };
+		03E93E441B175466009E7EA1 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E93E421B175466009E7EA1 /* Nimble.framework */; };
+		03E93E451B175466009E7EA1 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E93E431B175466009E7EA1 /* Quick.framework */; };
+		03E93E481B17549D009E7EA1 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03E93E421B175466009E7EA1 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03E93E491B1754A1009E7EA1 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03E93E431B175466009E7EA1 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03E93E4B1B1756FD009E7EA1 /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B6A221B15125400096A0D /* ReposViewModel.swift */; };
+		03E93E4D1B1756FD009E7EA1 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68E81B15FFD600D4B262 /* Repository.swift */; };
+		03E93E4E1B1756FD009E7EA1 /* RepositoryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68EA1B16014C00D4B262 /* RepositoryParser.swift */; };
+		03E93E4F1B1756FD009E7EA1 /* GitHubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D31B1620FD005FB345 /* GitHubClient.swift */; };
+		03E93E501B1756FD009E7EA1 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D61B162359005FB345 /* DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,20 @@
 			remoteInfo = Repos;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03E93E471B17547D009E7EA1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03E93E491B1754A1009E7EA1 /* Quick.framework in CopyFiles */,
+				03E93E481B17549D009E7EA1 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03693A331B16A17700B324A7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -60,6 +78,8 @@
 		03E213D31B1620FD005FB345 /* GitHubClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubClient.swift; sourceTree = "<group>"; };
 		03E213D61B162359005FB345 /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		03E213D91B1623D6005FB345 /* DateFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
+		03E93E421B175466009E7EA1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		03E93E431B175466009E7EA1 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +96,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03693A361B16A64800B324A7 /* Alamofire.framework in Frameworks */,
+				03E93E441B175466009E7EA1 /* Nimble.framework in Frameworks */,
+				03E93E451B175466009E7EA1 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				03BA68EE1B1601D300D4B262 /* Source */,
+				03E93E4A1B1754B3009E7EA1 /* Frameworks */,
 				03D572111B067BC9003D0545 /* Supporting Files */,
 			);
 			path = ReposTests;
@@ -167,6 +190,15 @@
 			isa = PBXGroup;
 			children = (
 				03693A331B16A17700B324A7 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03E93E4A1B1754B3009E7EA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03E93E421B175466009E7EA1 /* Nimble.framework */,
+				03E93E431B175466009E7EA1 /* Quick.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,6 +231,7 @@
 				03D572091B067BC9003D0545 /* Sources */,
 				03D5720A1B067BC9003D0545 /* Frameworks */,
 				03D5720B1B067BC9003D0545 /* Resources */,
+				03E93E471B17547D009E7EA1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -304,13 +337,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E93E4B1B1756FD009E7EA1 /* ReposViewModel.swift in Sources */,
+				03E93E4D1B1756FD009E7EA1 /* Repository.swift in Sources */,
+				03E93E4E1B1756FD009E7EA1 /* RepositoryParser.swift in Sources */,
+				03E93E4F1B1756FD009E7EA1 /* GitHubClient.swift in Sources */,
+				03E93E501B1756FD009E7EA1 /* DateFormatter.swift in Sources */,
 				03E213DA1B1623D6005FB345 /* DateFormatterTests.swift in Sources */,
-				03BA68E71B15FE2800D4B262 /* ReposViewModel.swift in Sources */,
 				03BA68F21B1601FD00D4B262 /* RepositoryParserTests.swift in Sources */,
-				03BA68F41B16028500D4B262 /* Repository.swift in Sources */,
-				03E213D81B162359005FB345 /* DateFormatter.swift in Sources */,
-				03E213D51B1622B7005FB345 /* GitHubClient.swift in Sources */,
-				03BA68F31B16023900D4B262 /* RepositoryParser.swift in Sources */,
 				036B6A211B15123100096A0D /* ReposViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +398,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -409,6 +443,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
