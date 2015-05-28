@@ -9,7 +9,7 @@
 import Quick
 import Nimble
 
-class DateFormatterTests: QuickSpec {
+class DateFormatterSpec: QuickSpec {
     override func spec() {
         it("formats dates for the server") {
             let components = NSDateComponents()

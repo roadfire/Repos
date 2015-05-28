@@ -9,7 +9,7 @@
 import Quick
 import Nimble
 
-class RepositoryParserTests: QuickSpec {
+class RepositoryParserSpec: QuickSpec {
     override func spec() {
         describe("parse repository") {
             context("given a dictionary representing a repository") {

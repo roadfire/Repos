@@ -13,7 +13,7 @@
 		036B6A231B15125400096A0D /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B6A221B15125400096A0D /* ReposViewModel.swift */; };
 		03BA68E91B15FFD600D4B262 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68E81B15FFD600D4B262 /* Repository.swift */; };
 		03BA68EB1B16014C00D4B262 /* RepositoryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68EA1B16014C00D4B262 /* RepositoryParser.swift */; };
-		03BA68F21B1601FD00D4B262 /* RepositoryParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68F11B1601FD00D4B262 /* RepositoryParserTests.swift */; };
+		03BA68F21B1601FD00D4B262 /* RepositoryParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA68F11B1601FD00D4B262 /* RepositoryParserSpec.swift */; };
 		03D571FE1B067BC8003D0545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D571FD1B067BC8003D0545 /* AppDelegate.swift */; };
 		03D572001B067BC8003D0545 /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D571FF1B067BC8003D0545 /* ReposViewController.swift */; };
 		03D572031B067BC8003D0545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D572011B067BC8003D0545 /* Main.storyboard */; };
@@ -22,7 +22,7 @@
 		03D5721E1B068223003D0545 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5721D1B068223003D0545 /* RepoCell.swift */; };
 		03E213D41B1620FD005FB345 /* GitHubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D31B1620FD005FB345 /* GitHubClient.swift */; };
 		03E213D71B162359005FB345 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D61B162359005FB345 /* DateFormatter.swift */; };
-		03E213DA1B1623D6005FB345 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D91B1623D6005FB345 /* DateFormatterTests.swift */; };
+		03E213DA1B1623D6005FB345 /* DateFormatterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E213D91B1623D6005FB345 /* DateFormatterSpec.swift */; };
 		03E93E441B175466009E7EA1 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E93E421B175466009E7EA1 /* Nimble.framework */; };
 		03E93E451B175466009E7EA1 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E93E431B175466009E7EA1 /* Quick.framework */; };
 		03E93E481B17549D009E7EA1 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03E93E421B175466009E7EA1 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -64,7 +64,7 @@
 		036B6A221B15125400096A0D /* ReposViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
 		03BA68E81B15FFD600D4B262 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		03BA68EA1B16014C00D4B262 /* RepositoryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryParser.swift; sourceTree = "<group>"; };
-		03BA68F11B1601FD00D4B262 /* RepositoryParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryParserTests.swift; sourceTree = "<group>"; };
+		03BA68F11B1601FD00D4B262 /* RepositoryParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryParserSpec.swift; sourceTree = "<group>"; };
 		03D571F81B067BC8003D0545 /* Repos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D571FC1B067BC8003D0545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D571FD1B067BC8003D0545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		03D5721D1B068223003D0545 /* RepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 		03E213D31B1620FD005FB345 /* GitHubClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubClient.swift; sourceTree = "<group>"; };
 		03E213D61B162359005FB345 /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
-		03E213D91B1623D6005FB345 /* DateFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
+		03E213D91B1623D6005FB345 /* DateFormatterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterSpec.swift; sourceTree = "<group>"; };
 		03E93E421B175466009E7EA1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		03E93E431B175466009E7EA1 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				036B6A201B15123100096A0D /* ReposViewModelTests.swift */,
-				03BA68F11B1601FD00D4B262 /* RepositoryParserTests.swift */,
-				03E213D91B1623D6005FB345 /* DateFormatterTests.swift */,
+				03BA68F11B1601FD00D4B262 /* RepositoryParserSpec.swift */,
+				03E213D91B1623D6005FB345 /* DateFormatterSpec.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -342,8 +342,8 @@
 				03E93E4E1B1756FD009E7EA1 /* RepositoryParser.swift in Sources */,
 				03E93E4F1B1756FD009E7EA1 /* GitHubClient.swift in Sources */,
 				03E93E501B1756FD009E7EA1 /* DateFormatter.swift in Sources */,
-				03E213DA1B1623D6005FB345 /* DateFormatterTests.swift in Sources */,
-				03BA68F21B1601FD00D4B262 /* RepositoryParserTests.swift in Sources */,
+				03E213DA1B1623D6005FB345 /* DateFormatterSpec.swift in Sources */,
+				03BA68F21B1601FD00D4B262 /* RepositoryParserSpec.swift in Sources */,
 				036B6A211B15123100096A0D /* ReposViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
