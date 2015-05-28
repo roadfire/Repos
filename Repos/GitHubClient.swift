@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 struct GitHubClient {
     let searchURL = "https://api.github.com/search/repositories"
@@ -18,8 +19,17 @@ struct GitHubClient {
         let date = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.CalendarUnitDay, value: -createdDaysAgo, toDate: NSDate(), options: nil)!
         let formatter = DateFormatter()
         let urlString = "\(searchURL)?q=created:\">\(formatter.stringFromDate(date))\"+language:swift+stars:\">=\(minimumStars)\"&sort=stars&order=desc".stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
-        let url = NSURL(string: urlString)!
-        let task = session.dataTaskWithURL(url) { (data, response, error) -> Void in
+        let params = [
+            "q": "created:\">\(formatter.stringFromDate(date))\" language:swift stars:\">=\(minimumStars)\"",
+            "sort": "stars",
+            "order": "desc"
+        ]
+        
+        Alamofire.request(.GET, urlString, parameters: nil, encoding: .URL).responseJSON(options: .allZeros) { (request, response, jsonObject, error) -> Void in
+            println("request: \(request.URL)")
+            println("request params: \(request.URL!.parameterString)")
+            println("json: \(jsonObject)")
+            println("response: \(response)")
             if let error = error
             {
                 println(error.localizedDescription)
@@ -27,13 +37,15 @@ struct GitHubClient {
             }
             
             var jsonError: NSError?
-            if let json = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: &jsonError) as? [String: AnyObject],
-                let repositoriesJSON = json["items"] as? [[String: AnyObject]]
+            if let jsonObject = jsonObject as? [String: AnyObject],
+                let repositoriesJSON = jsonObject["items"] as? [[String: AnyObject]]
             {
-                completion(repositoriesJSON)
+                if let jsonError = jsonError {
+                    println(jsonError.localizedDescription)
+                } else {
+                    completion(repositoriesJSON)
+                }
             }
         }
-        
-        task.resume()
     }
 }
