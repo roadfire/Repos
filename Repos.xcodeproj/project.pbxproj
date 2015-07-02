@@ -252,6 +252,7 @@
 		03D571F01B067BC8003D0545 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Roadfire Software";
 				TargetAttributes = {

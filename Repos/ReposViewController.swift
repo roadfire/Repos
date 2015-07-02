@@ -47,7 +47,7 @@ class ReposViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.descriptionLabel.text = viewModel.descriptionForItemAtIndexPath(indexPath)
         cell.starsLabel.text = viewModel.starsForItemAtIndexPath(indexPath)
 
-        if count(cell.descriptionLabel.text!) > 0 {
+        if (cell.descriptionLabel.text!).characters.count > 0 {
             cell.descriptionBottomConstraint.constant = 8
         }
         else {
